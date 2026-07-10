@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learnathon — Teacher Library</title>
+<style>
+  :root{
+    --green:#2C5F2D; --green-dk:#1E421F; --accent:#4C9A2A; --gold:#F9E795; --gold-dk:#E8B923;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:'Segoe UI', Calibri, Arial, sans-serif; min-height:100vh;
+    background:radial-gradient(ellipse at 30% 15%, #3B7A3E 0%, var(--green-dk) 70%);
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    padding:34px 20px; color:#fff;
+  }
+  .kicker{color:var(--gold); font-weight:800; letter-spacing:5px; font-size:14px; margin-bottom:10px; text-align:center;}
+  h1{font-size:clamp(26px,5vw,42px); text-align:center; margin-bottom:8px;}
+  h1 em{color:var(--gold); font-style:normal;}
+  .sub{color:#DDEBD6; text-align:center; max-width:620px; font-size:15px; margin-bottom:34px;}
+  .grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:16px; width:100%; max-width:1050px;}
+  a.card{
+    display:block; text-decoration:none; background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.16); border-radius:16px; padding:22px 20px;
+    transition:transform .18s ease, background .18s ease; color:#fff;
+  }
+  a.card:hover{transform:translateY(-4px); background:rgba(255,255,255,.13);}
+  .emoji{font-size:30px; margin-bottom:12px; display:block;}
+  .card b{display:block; color:var(--gold); font-size:17px; margin-bottom:6px;}
+  .card span{color:#DDEBD6; font-size:13px; line-height:1.45; display:block;}
+  .card .open{display:inline-block; margin-top:14px; background:var(--accent); color:#fff; font-weight:800; font-size:12px; padding:6px 16px; border-radius:999px;}
+  a.card.wide{grid-column:1 / -1; display:flex; align-items:center; gap:20px;}
+  a.card.wide .emoji{margin-bottom:0; font-size:36px;}
+  .foot{margin-top:34px; color:rgba(255,255,255,.5); font-size:12px; text-align:center;}
+</style>
+</head>
+<body>
+  <div class="kicker">LEARNATHON · GRADE 7</div>
+  <h1>Teacher <em>Flipbook</em> Library</h1>
+  <div class="sub">Everything the teaching team needs for the 11-day Accelerated English Language Program — open any book and flip through it right in your browser.</div>
+  <div class="grid">
+    <a class="card wide" href="Learnathon_Teacher_Timetable_Flipbook.html">
+      <span class="emoji">🗓️</span>
+      <span>
+        <b>Daily Teacher Timetable · Days 1–11</b>
+        <span>Who does what, every hour of every day — all four class teachers plus the English Immersive Hour team.</span>
+        <span class="open">Open flipbook →</span>
+      </span>
+    </a>
+    <a class="card" href="Learnathon_A1_Teacher_Companion_Flipbook.html">
+      <span class="emoji">🌱</span>
+      <b>A1 · Foundation</b>
+      <span>Teacher Companion Book — Lyba's class. 87 pages of day-by-day lesson scripts.</span>
+      <span class="open">Open flipbook →</span>
+    </a>
+    <a class="card" href="Learnathon_A2_Teacher_Companion_Flipbook.html">
+      <span class="emoji">🌿</span>
+      <b>A2 · Elementary</b>
+      <span>Teacher Companion Book — Mehreen's class. 85 pages of day-by-day lesson scripts.</span>
+      <span class="open">Open flipbook →</span>
+    </a>
+    <a class="card" href="Learnathon_B1_Teacher_Companion_Flipbook.html">
+      <span class="emoji">🌳</span>
+      <b>B1 · Intermediate</b>
+      <span>Teacher Companion Book — Barya's class. 95 pages of day-by-day lesson scripts.</span>
+      <span class="open">Open flipbook →</span>
+    </a>
+    <a class="card" href="Learnathon_B2_Teacher_Companion_Flipbook.html">
+      <span class="emoji">🌲</span>
+      <b>B2 · Upper-Intermediate</b>
+      <span>Teacher Companion Book — Wajhee's class. 87 pages of day-by-day lesson scripts.</span>
+      <span class="open">Open flipbook →</span>
+    </a>
+  </div>
+  <div class="foot">Learnathon — Accelerated English Language Program · CEFR A1–B2 · 10 teaching days + Day-11 Showcase</div>
+</body>
+</html>
